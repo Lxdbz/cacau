@@ -1,0 +1,26 @@
+User-agent: *
+
+Disallow: */carrinho*
+Disallow: */checkout*
+Disallow: */confirmacao-pedido*
+Disallow: */login*
+Disallow: */minha-conta*
+Disallow: */minha-conta-enderecos*
+Disallow: */minha-conta-favoritos*
+Disallow: */minha-conta-pagamentos*
+Disallow: */minha-conta-perfil*
+Disallow: */minha-conta-senha*
+Disallow: /*pmin*
+Disallow: /*pmax*
+Disallow: /*prefn1*
+Disallow: /*prefn2*
+Disallow: /*prefn3*
+Disallow: /*prefn4*
+Disallow: /*prefv1*
+Disallow: /*prefv2*
+Disallow: /*prefv3*
+Disallow: /*prefv4*
+Disallow: /*srule*
+Disallow: /on/demandware.store/Sites-CacauShow-Site/default/
+
+Sitemap: https://www.cacaushow.com.br/sitemap_index.xml

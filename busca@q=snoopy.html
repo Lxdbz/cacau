@@ -1,0 +1,3066 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<link rel="preload" href="https://www.googletagmanager.com/gtm.js?id=GTM-PQSFKTS" as="script"/>
+<link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-TTZNN90HGX&l=dataLayer&cx=c" as="script"/>
+<link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script"/>
+<link rel="preload" href="https://connect.facebook.net/en_US/fbevents.js" as="script"/>
+<!--[if gt IE 9]><!-->
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+    <script defer type="text/javascript" src="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/search.js"
+        
+        >
+    </script>
+
+
+<!--<![endif]-->
+<meta charset=UTF-8>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+    <title>
+        Busca | Loja Cacau Show
+    </title>
+
+
+<meta name="description" content="Busca de chocolates"/>
+<meta name="keywords" content="Cacau Show"/>
+
+
+
+
+<link rel="icon" type="image/png" href="on/demandware.static/Sites-CacauShow-Site/-/default/dw0281253c/images/favicon.ico"/>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQSFKTS');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Optimize -->
+<script async src="https://www.googleoptimize.com/optimize.js?id=OPT-5MPHKZF"></script>
+<!-- End Google Optimize -->
+
+<script>
+  var storedUserId = sessionStorage.getItem('userId') || undefined,
+      pathName = window.location.pathname,
+      pageTypeByPathname = pathName.split('/')[1],
+      pageTypeDictionary = {
+    'home':'home',
+    'categoria':'category',
+    'produto':'product',
+    'busca':'internalsitesearch',
+    'carrinho':'cart',
+    'checkout':'checkout'
+  };
+
+if(!storedUserId){
+  fetch('/on/demandware.store/Sites-CacauShow-Site/default/Account-PageView')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok fetching user id');
+    }
+    return response.json();
+  })
+  .then(data => {
+    sessionStorage.setItem('userId',data.userId)
+  })
+  .catch(error => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'Data Layer Error: ' + error.message
+            });
+  });
+  }
+
+  (function pushPageView(storedUserId) {
+    const currentPage = window.location.pathname
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+        'event': 'virtualPageView',
+        'currentPage': currentPage,
+        'pageType': pageTypeDictionary[pageTypeByPathname],
+        'pageTitle': document.title,
+        'previousPage': getPreviousPage(currentPage),
+        'userID': storedUserId,
+    });
+  })(storedUserId)
+
+
+
+  function getPreviousPage(currentPage) {
+    const previousPage = window.sessionStorage.getItem('dataLayer/previousPage');
+    window.sessionStorage.setItem('dataLayer/previousPage', currentPage);
+    return previousPage;
+  }
+
+</script>
+
+
+
+
+
+
+
+
+<!-- VWO Tag Script -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code || (function() {
+var account_id=1004419,
+version=2.1,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;display: block !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+</script>
+
+
+<link rel="stylesheet" href="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/global.css" />
+
+    <link rel="stylesheet" href="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/search.css"  />
+
+
+
+
+    <link rel="stylesheet" href="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/smartOrderRefill.css" />
+
+
+
+
+    <meta name="google-site-verification" content="HV1li6dst_6LWYxjo7e_ada038iVt0t2L_nZE7TmS1Y" />
+
+
+<meta name="facebook-domain-verification" content="52tht2pe7s2lmpwrlrz87cj928yooi" />
+
+
+<script>
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE"};
+window.Resources = {"I_AGREE":"global.i_agree","CLOSE":"global.close","CEP":"07753580","BASIC_ADDRESS":"6045"};
+window.Urls = {"homeShow":"/","continueUrl":"https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Page-AppResources","staticPath":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/","giftRegAdd":"https://www.cacaushow.com.br/detalhes-endereco","getAvailability":"/on/demandware.store/Sites-CacauShow-Site/default/Product-GetAvailability","cartGet":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Get","cartItems":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-Items","WishlistGet":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-GetListJson","removeImg":"/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/images/icon_remove.gif","storeDetails":"/on/demandware.store/Sites-CacauShow-Site/default/Stores-Details?page=storelocator","webProtocolHost":"https://www.cacaushow.com.br","addToCart":"/adicionar-produto","removeFromCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveProductLineItem","addToWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct","removeFromWishlist":"/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=","loginShow":"/login","changeAddress":"/on/demandware.store/Sites-CacauShow-Site/default/Address-Change","removeCoupom":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-RemoveCouponLineItem?uuid=","getPaymentMethods":"/pagamentos-adyen","addGiftCertificate":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-Add","checkBalance":"/on/demandware.store/Sites-CacauShow-Site/default/PaymentGiftCertificate-GetBalance","addCashback":"/on/demandware.store/Sites-CacauShow-Site/default/CheckoutServices-SubmitPayment","updateQuantityCart":"/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"};
+window.SitePreferences = {"postalCodesBR":"{\"postalCodesBR\":[\n{\"state\":\"ac\", \"postalFrom\": 69900000, \"postalTo\" : 69999999},\n{\"state\":\"al\", \"postalFrom\": 57000000, \"postalTo\" : 57999999},\n{\"state\":\"am\", \"postalFrom\": 69000000, \"postalTo\" : 69299999},\n{\"state\":\"am\", \"postalFrom\": 69400000, \"postalTo\" : 69899999},\n{\"state\":\"ap\", \"postalFrom\": 68900000, \"postalTo\" : 68999999},\n{\"state\":\"ba\", \"postalFrom\": 40000000, \"postalTo\" : 48999999},\n{\"state\":\"ce\", \"postalFrom\": 60000000, \"postalTo\" : 63999999},\n{\"state\":\"df\", \"postalFrom\": 70000000, \"postalTo\" : 72799999},\n{\"state\":\"df\", \"postalFrom\": 73000000, \"postalTo\" : 73699999},\n{\"state\":\"es\", \"postalFrom\": 29000000, \"postalTo\" : 29999999},\n{\"state\":\"go\", \"postalFrom\": 72800000, \"postalTo\" : 72999999},\n{\"state\":\"go\", \"postalFrom\": 73700000, \"postalTo\" : 76799999},\n{\"state\":\"ma\", \"postalFrom\": 65000000, \"postalTo\" : 65999999},\n{\"state\":\"mg\", \"postalFrom\": 30000000, \"postalTo\" : 39999999},\n{\"state\":\"ms\", \"postalFrom\": 79000000, \"postalTo\" : 79999999},\n{\"state\":\"mt\", \"postalFrom\": 78000000, \"postalTo\" : 78899999},\n{\"state\":\"pa\", \"postalFrom\": 66000000, \"postalTo\" : 68899999},\n{\"state\":\"pb\", \"postalFrom\": 58000000, \"postalTo\" : 58999999},\n{\"state\":\"pe\", \"postalFrom\": 50000000, \"postalTo\" : 56999999},\n{\"state\":\"pi\", \"postalFrom\": 64000000, \"postalTo\" : 64999999},\n{\"state\":\"pr\", \"postalFrom\": 80000000, \"postalTo\" : 87999999},\n{\"state\":\"rs\", \"postalFrom\": 20000000, \"postalTo\" : 28999999},\n{\"state\":\"rn\", \"postalFrom\": 59000000, \"postalTo\" : 59999999},\n{\"state\":\"ro\", \"postalFrom\": 76800000, \"postalTo\" : 76999999},\n{\"state\":\"rr\", \"postalFrom\": 69300000, \"postalTo\" : 69399999},\n{\"state\":\"rs\", \"postalFrom\": 90000000, \"postalTo\" : 99999999},\n{\"state\":\"sc\", \"postalFrom\": 88000000, \"postalTo\" : 89999999},\n{\"state\":\"se\", \"postalFrom\": 49000000, \"postalTo\" : 49999999},\n{\"state\":\"sp\", \"postalFrom\": 1000000, \"postalTo\" : 19999999},\n{\"state\":\"to\", \"postalFrom\": 77000000, \"postalTo\" : 77999999}\n]}","priceTables":"{\"priceTables\":[\n{\"priceBookID\": \"df-sale-prices\", \"states\": [\"df\"]},\n{\"priceBookID\": \"go-sale-prices\", \"states\": [\"go\"]},\n{\"priceBookID\": \"mg-sale-prices\", \"states\": [\"mg\"]},\n{\"priceBookID\": \"pr-sale-prices\", \"states\": [\"pr\"]},\n{\"priceBookID\": \"z1-sale-prices\", \"states\": [\"sp\"]},\n{\"priceBookID\": \"z2-sale-prices\", \"states\": [\"es\",\"ms\",\"mt\",\"rs\",\"sc\"]},\n{\"priceBookID\": \"z3-sale-prices\", \"states\": [\"rj\"]},\n{\"priceBookID\": \"z4-sale-prices\", \"states\": [\"ac\",\"am\",\"ap\",\"rr\"]},\n{\"priceBookID\": \"z5-sale-prices\", \"states\": [\"al\",\"ba\",\"ce\",\"ma\",\"pa\",\"pb\",\"pe\",\"pi\",\"rn\",\"ro\",\"se\",\"to\"]}\n]}"};
+}());
+</script>
+
+
+
+
+
+
+
+
+    <style>
+/*
+.grecaptcha-badge {
+    bottom: 100px !important;
+}*/
+
+/* Move badge to the left side */
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+</style>
+
+<link rel="stylesheet" href="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/css/skin/skin.css" />
+
+<input
+    type="hidden"
+    class="js-cart-abandonment-settings"
+    data-is-enabled="true"
+    data-capture-cart-url="/on/demandware.store/Sites-CacauShow-Site/default/CartAbandonment-CaptureCart" />
+
+
+<link rel="canonical" href="busca@cgid=undefined.html" />
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Etc/GMT+3",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bfjd-CacauShow';
+CQuotient.realm = 'BFJD';
+CQuotient.siteId = 'CacauShow';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'default';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+   <script type="application/ld+json">
+        {"@context":"http://schema.org/","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.cacaushow.com.br/produto/ovo-de-p%C3%A1scoa-ao-leite-mochila-snoopy-170g-1003554.html"},{"@type":"ListItem","position":2,"url":"https://www.cacaushow.com.br/produto/ovo-de-p%C3%A1scoa-ao-leite-pel%C3%BAcia-snoopy-com-charlie-brown-170g-1003620.html"},{"@type":"ListItem","position":3,"url":"https://www.cacaushow.com.br/produto/ovo-de-p%C3%A1scoa-ao-leite-pel%C3%BAcia-snoopy-com-woodstock-170g-1003619.html"},{"@type":"ListItem","position":4,"url":"https://www.cacaushow.com.br/produto/pel%C3%BAcia-do-snoopy-de-natal-2004802.html"}]}
+    </script>
+
+
+</head>
+<body class="" data-current-store="null">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQSFKTS"
+height="0" width="0" style="display:none;visibility:hidden"
+> </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page" data-action="Search-Show" data-querystring="q=snoopy">
+<header class="it__header">
+    
+
+
+
+
+    
+    <div class="hidden-sm-down">
+        <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+    </div>
+    <a href="busca@q=snoopy.html#maincontent" class="skip" aria-label="Ir para conte&uacute;do principal">Ir para conte&uacute;do principal</a>
+<a href="busca@q=snoopy.html#footercontent" class="skip" aria-label="Ir para conte&uacute;do do rodap&eacute;">Ir para conte&uacute;do do rodap&eacute;</a>
+    <div class="header-banner slide-up d-none">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="content">
+                    
+	 
+
+	
+                </div>
+                <div class="close-button">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header container">
+        <div class="it__header--bgContainer">
+            <div class="it__header--bg container-wrapper">
+                <div class="col p-0">
+                    <div class="navbar-header brand">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <a class="logo-home" href="index.html" title="Cacau Show Home">
+                                <img class="it_header--logo" src="on/demandware.static/Sites-CacauShow-Site/-/default/dw2f40992f/svg/logo_cacau_show.svg" alt="Cacau Show" />
+                            </a>
+                            <div class="d-xl-none d-flex align-items-center">
+                                <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                                    <div class="minicart-total">
+    <a class="minicart-link" href="carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                                </div>
+                                <button class="navbar-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-menu"></span>
+                                </button>
+                                <button class="close-button" type="button" role="button" aria-label="Fechar menu">
+                                    Fechar menu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="it__search">
+                        <div class="site-search">
+    <form role="search"
+        action="https://www.cacaushow.com.br/busca"
+        method="get"
+        name="simpleSearch"
+    >
+        <input class="form-control search-field"
+            type="text"
+            name="q"
+            value=""
+            placeholder="Buscar Produto"
+            role="combobox"
+            aria-describedby="search-assistive-text"
+            aria-haspopup="listbox"
+            aria-owns="search-results"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-activedescendant=""
+            aria-controls="search-results"
+            aria-label="Insira palavra chave ou n&deg; do item"
+            autocomplete="off" />
+        <button type="reset" name="reset-button" class="reset-button d-none" aria-label="">
+            <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dw49c94b21/images/icon-x-lg.svg" alt="" />
+        </button>
+        <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-CacauShow-Site/default/SearchServices-GetSuggestions?q="></div>
+        <input type="hidden" value="default" name="lang">
+    </form>
+</div>
+
+                    </div>
+                </div>
+                <div class="col-xl-5 it__login">
+                    <div class="it__login--options">
+                        
+    <script>
+        sessionStorage.removeItem('userId')
+</script>
+
+    <div class="user">
+        <a class="btn btn-chamoisee" href="minha-conta.html" role="button"
+            aria-label="Entrar na minha conta"
+        >
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="user-message">Entrar</span>
+        </a>
+    </div>
+
+
+
+<div class="it__changeCep">
+<button class="js-header-postal-code"  data-toggle="modal" data-target="#modal-cep">
+<span class="it__changeCep__address">
+Cacau Show - SP
+</span>
+
+<span class="it__changeCep__btnChange">
+Alterar
+</span>
+
+</button>
+</div>
+
+
+                    </div>
+                    <div class="it__minicart d-none d-xl-block">
+                        <div class="minicart" data-action-url="/on/demandware.store/Sites-CacauShow-Site/default/Cart-MiniCartShow">
+                            <div class="minicart-total">
+    <a class="minicart-link" href="carrinho.html" title="carrinho 0 Itens" aria-label="carrinho 0 Itens" aria-haspopup="true">
+        <i class="minicart-icon fa fa-shopping-bag"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+    </a>
+</div>
+<div class="popover popover-bottom"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="it__subNav main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown" id="sg-navbar-collapse">
+            <nav class="navbar navbar-expand-xl cs__main--menu container-wrapper">
+    <div class="menu-group">
+        <ul class="nav navbar-nav">
+            
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="categoria/chocolate.html" id="cat_002" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Chocolate</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_002">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/chocolate/trufas.html" id="cat_002_01" role="menuitem" class="dropdown-link" tabindex="0">Trufas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/chocolate/tabletes-e-barras.html" id="cat_002_02" role="menuitem" class="dropdown-link" tabindex="0">Tabletes e Barras</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/chocolate/bombons.html" id="cat_002_03" role="menuitem" class="dropdown-link" tabindex="0">Bombons</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/chocolate/bolinhas-de-chocolate.html" id="cat_002_04" role="menuitem" class="dropdown-link" tabindex="0">Bolinhas de Chocolate</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw409a49bb/header-Bytes.png" title="Bytes" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw5b864544/header-laCreme.png" title="laCreme" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="categoria/chocolate.html" id="cat_002" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Chocolate</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="categoria/biscoito.html" id="cat_001" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Biscoito</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_001">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/biscoito/wafer-e-canudinhos.html" id="cat_001_01" role="menuitem" class="dropdown-link" tabindex="0">Wafer e Canudinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/biscoito/cookies.html" id="cat_001_02" role="menuitem" class="dropdown-link" tabindex="0">Cookies</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/biscoito/biscoito-com-chocolate.html" id="cat_001_03" role="menuitem" class="dropdown-link" tabindex="0">Biscoito com Chocolate</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/biscoito/p%C3%83%C2%A3o-de-mel" id="cat_001_04" role="menuitem" class="dropdown-link" tabindex="0">P&atilde;o de Mel</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw227f3a27/header-Cookies.png" title="Cookies" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw06e81c7a/header-Wafer.png" title="Wafer" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="categoria/biscoito.html" id="cat_001" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Biscoito</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="categoria/cestas-e-presentes.html" id="cat_003" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Cestas e Presentes</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/cestas-e-presentes/presentes.html" id="cat_003_02" role="menuitem" class="dropdown-link" tabindex="0">Presentes</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/cestas-e-presentes/caixas,-cestas-e-sacolas.html" id="cat_003_03" role="menuitem" class="dropdown-link" tabindex="0">Caixas, Cestas e Sacolas</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/cestas-e-presentes/pel%C3%83%C2%BAcias-e-ursinhos" id="cat_003_04" role="menuitem" class="dropdown-link" tabindex="0">Pel&uacute;cias e Ursinhos</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/cestas-e-presentes/canecas.html" id="cat_003_06" role="menuitem" class="dropdown-link" tabindex="0">Canecas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_003">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/cestas-e-presentes/livros.html" id="cat_003_08" role="menuitem" class="dropdown-link" tabindex="0">Livros</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw2506cb45/header-Caneca.png" title="Caneca" /></li>
+</ul>
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="categoria/cestas-e-presentes.html" id="cat_003" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Cestas e Presentes</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="categoria/moda.html" id="cat_005" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>Moda</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_005">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/t%C3%83%C2%AAnis" id="cat_005_01" role="menuitem" class="dropdown-link" tabindex="0">T&ecirc;nis</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/moda/sand%C3%83%C2%A1lias" id="cat_005_02" role="menuitem" class="dropdown-link" tabindex="0">Sand&aacute;lias</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="categoria/moda/bolsas.html" id="cat_005_03" role="menuitem" class="dropdown-link" tabindex="0">Bolsas</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw34b89fb9/header-Mochila.png" title="Mochila" /></li>
+</ul>
+        <ul class="flex-fill menuBanner">
+	<li><img alt="" src="on/demandware.static/-/Sites-siteCatalog_CacauShow/default/dw4022ddf8/header-Tenis.png" title="Tenis" /></li>
+</ul>
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="categoria/moda.html" id="cat_005" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">Moda</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+                    
+                        <li  class="nav-item dropdown" role="presentation">
+                            <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <span>P&aacute;scoa</span>
+                            </a>
+                            
+                            <div class="dropdown-menu">
+    <div class="d-lg-flex justify-content-start dropdown-menu-content">
+        
+        
+        
+            
+                <ul class="flex-fill list-subCategories" role="menu" aria-hidden="true" aria-label="cat_010">
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa" id="cat_010_01" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/ovo-de-p%C3%83%C2%A1scoa-infantil" id="cat_010_02" role="menuitem" class="dropdown-link" tabindex="0">Ovo de P&aacute;scoa Infantil</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/bolo-de-p%C3%83%C2%A1scoa" id="cat_010_03" role="menuitem" class="dropdown-link" tabindex="0">Bolo de P&aacute;scoa</a>
+                    </li>
+                
+            
+                
+            
+        
+            
+                
+                    <li class="dropdown-item" role="presentation">
+                        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa/chocolates-de-p%C3%83%C2%A1scoa" id="cat_010_04" role="menuitem" class="dropdown-link" tabindex="0">Chocolates de P&aacute;scoa</a>
+                    </li>
+                
+            
+                </ul>
+                
+            
+        
+
+        
+        
+    </div>
+
+    <p class="viewCategory mb-0">
+        <a href="https://www.cacaushow.com.br/categoria/p%C3%83%C2%A1scoa" id="cat_010" class="viewCategory-link" tabindex="0">
+            Ver tudo em <strong class="viewCategory-name">P&aacute;scoa</strong> <i class="fa fa-chevron-right"></i>
+        </a>
+    </p>
+</div>
+
+                        </li>
+                    
+                
+            
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+
+	<div class="html-slot-container">
+    
+        
+            <style type="text/css">
+.it_product-detail__rating{
+  display: none;
+}
+</style>
+<a class="btn-menu btn-sazonal" href="https://www.cacaushow.com.br/categoria/p%C3%A1scoa/ovo-de-p%C3%A1scoa-infantil" role="link" tabindex="0"><span class="btn-menu-text">Ovos Infantis</span> <img alt="" src="on/demandware.static/-/Sites/default/dwb0ab1ce7/bookmark.svg" title="" /></a>
+        
+    
+</div>
+ 
+	
+            </li>
+            <li class="nav-item dropdown link-sazonal" role="presentation">
+                
+	 
+
+	
+            </li>
+            <li class="nav-item dropdown" role="presentation">
+                <a class="btn-menu btn-cacau-lovers" href="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/CacauLovers-Show" target="_blank"><img alt="" src="on/demandware.static/-/Sites-CacauShow-Library/default/dw5821f791/images/svg/ico_lovers_branca.svg" title="" /><span class="btn-menu-text"> Cacau Lovers </span></a>
+            </li>
+            <div class="hidden-md-up">
+                
+                <div class="it__header--above">
+  <div class="header-above-container container-wrapper">
+    <ul>
+        <li>
+            <a href="https://revendedor.cacaushow.com.br/revendedor/">
+                <span class="it__above--text">
+                    <span> Seja um Revendedor </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="franquia.html">
+                <span class="it__above--text">
+                    <span> Seja um Franqueado </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="para-sua-empresa/para-sua-empresa.html">
+                <span class="it__above--text">
+                    <span> Área para Empresas </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://cacaushow.gupy.io/" target="_blank">
+                <span class="it__above--text">
+                    <span> Trabalhe Conosco </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.benditocacaoresort.com.br/" target="_blank">
+                <span class="it__above--text">
+                    <span> Nossos Hotéis </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="cacau-park.html" target="_blank">
+                <span class="it__above--text">
+                    <span> Cacau Park </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="lojas.html">
+                <span class="icon-map-pin"> </span>
+                <span class="it__above--text"> Encontre uma Loja </span>
+            </a>
+        </li>
+        <li>
+            <a href="parcerias.html">
+                <span class="icon-gift"> </span>
+                <span class="it__above--text">
+                    <span> Vale Presente </span>
+                </span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</div>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+        </div>
+    </div>
+</header>
+
+<div role="main" class="Search-Show" id="maincontent">
+
+    
+    <script>
+    function formatCategory(item, categories) {
+        categories.forEach(function(cat, index){
+            switch (index) {
+                case 0:
+                    item.item_category = cat;
+                    break;
+                case 1:
+                    item.item_category1 = cat;
+                    break;
+                case 2:
+                    item.item_category2 = cat;
+                    break;
+                case 3:
+                    item.item_category3 = cat;
+                    break;
+                case 4:
+                    item.item_category4 = cat;
+                    break;
+                default:
+                    break;
+            }
+        });
+
+        return item;
+    }
+</script>
+
+<script>
+    function formatItems(products, categories) {
+        var itemsPayload = [];
+
+        products = products.map(function(prod){
+            if(prod.listName == "undefined"){
+                prod.listName = undefined;
+            }
+
+            var items = {
+                item_name: prod.productName,
+                item_id: prod.id,
+                price: prod.price.sales.value,
+                item_variant: prod.productType,
+                item_list_name: prod.listName,
+                index: prod.index,
+                quantity: prod.quantity || undefined
+            };
+
+            if(prod.categories){
+                var categories = [];
+                prod.categories.forEach(function(cat){
+                    categories.push(cat.htmlValue)
+                });
+
+                items = formatCategory(items, categories);
+            }
+
+            itemsPayload.push(items);
+        });
+
+        return itemsPayload;
+    }
+</script>
+
+<script>
+    function pushEvents(products, listData){
+        try {
+            var itemsPayload = formatItems(products);
+            window.dataLayer = window.dataLayer || [];
+            if(listData.isCategorySearch){
+                window.dataLayer.push({
+                    event: 'view_category_results',
+                    category: listData.category.name,
+                    ecommerce: {
+                        items: itemsPayload
+                    }
+                });
+            }  else{
+                if(listData.productIds.length == 0){
+                    window.dataLayer.push({
+                        event: 'search_fail',
+                        search_term: listData.searchKeywords
+                    });
+                }  else {
+                    window.dataLayer.push({
+                        event: 'view_search_results',
+                        search_term: listData.searchKeywords,
+                        ecommerce: {
+                            items: itemsPayload
+                        }
+                    });
+                }
+            }
+        } catch (error) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'listEvents - pushEvents: ' + error.message
+            });
+        }
+    }
+</script>
+
+    
+    <script> var productsList = []; </script>
+    
+
+
+
+
+    
+    
+
+
+
+
+
+<div class="container-wrapper search-results">
+    <div class="container-fluid">
+        <div class="row">
+    <div role="navigation" aria-label="Breadcrumb" class="col-12">
+        <ol id="breadcrumb" class="breadcrumb">
+            <li class="breadcrumb__item breadcrumb__item--first">
+                <a href="index.html" class="breadcrumb__item--home breadcrumb__item--link">
+                    home
+                </a>
+            </li>
+            
+        </ol>
+    </div>
+</div>
+
+
+        <div class="row search-nav d-none">
+            
+                <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs nav-fill" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active product-search" href="busca@q=snoopy.html#product-search-results"
+                                aria-controls="product-search-results" data-toggle="tab" role="tab" aria-selected="true"
+                                tabindex="0" id="product-tab">
+                                Produtos
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link content-search" href="busca@q=snoopy.html#content-search-results-pane"
+                                aria-controls="content-search-results-pane" data-toggle="tab" role="tab"
+                                aria-selected="false" tabindex="-1" id="articles-tab"
+                                data-url="/on/demandware.store/Sites-CacauShow-Site/default/Search-Content?q=snoopy&amp;startingPage=0">
+                                Artigos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="tab-content col-12">
+                <div class="tab-pane active" id="product-search-results" role="tabpanel" aria-labelledby="product-tab">
+
+                        
+                            <div class="row grid-header">
+                                <div class="result-count col-12 col-md-9 col-sm-6 order-sm-2">
+                        
+
+                        </div>
+                    </div>
+
+                    
+                        <div class="row justify-content-center">
+                            
+                            <div class="refinement-bar js-refinement-bar col-xl-3 px-0 pl-xl-3">
+                                <wainclude url="/on/demandware.store/Sites-CacauShow-Site/default/Search-Refinebar?q=snoopy">
+                            </div>
+
+                            <div class="grid-content col-12 col-xl-9">
+                                
+                                
+                                        
+	 
+
+	
+                                
+
+                                <div class="d-flex justify-content-between">
+                                    
+    <div class="search-result-count-container">
+        
+            <span class="search-result-count">
+                
+                    <strong>4</strong> produtos para
+                
+            </span>
+            <span class="search-keywords ml-1 font-weight-bold">
+                snoopy
+            </span>
+        
+    </div>
+    
+    
+
+
+
+                                    <button type="button" class="btn btn-primary filter-results js-filter-results d-block d-xl-none">
+                                        Filtrar por
+                                    </button>
+
+                                    
+    <div class="d-flex align-items-center">
+        <span class="label-order">Ordenar por:</span>
+        <div class="custom-select-container">
+            <select name="sort-order" class="custom-select" aria-label="Ordenar por">
+                
+                    <option class="price-low-to-high" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=price-low-to-high&amp;start=0&amp;sz=4"
+                        data-id="price-low-to-high"
+                        
+                    >
+                        Menor Pre&ccedil;o
+                    </option>
+                
+                    <option class="price-high-to-low" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=price-high-to-low&amp;start=0&amp;sz=4"
+                        data-id="price-high-to-low"
+                        selected
+                    >
+                        Maior Pre&ccedil;o
+                    </option>
+                
+                    <option class="top-sellers" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=top-sellers&amp;start=0&amp;sz=4"
+                        data-id="top-sellers"
+                        
+                    >
+                        Mais Vendidos
+                    </option>
+                
+                    <option class="customer-favorites" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=customer-favorites&amp;start=0&amp;sz=4"
+                        data-id="customer-favorites"
+                        
+                    >
+                        Melhores Avalia&ccedil;&otilde;es
+                    </option>
+                
+                    <option class="product-name-ascending" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=product-name-ascending&amp;start=0&amp;sz=4"
+                        data-id="product-name-ascending"
+                        
+                    >
+                        A - Z
+                    </option>
+                
+                    <option class="product-name-descending" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=product-name-descending&amp;start=0&amp;sz=4"
+                        data-id="product-name-descending"
+                        
+                    >
+                        Z - A
+                    </option>
+                
+                    <option class="most-recent" value="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=most-recent&amp;start=0&amp;sz=4"
+                        data-id="most-recent"
+                        
+                    >
+                        Data de lan&ccedil;amento
+                    </option>
+                
+            </select>
+        </div>
+    </div>
+
+
+                                </div>
+
+                                
+                                <div class="js-product-grid product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+                                    
+
+    <div class="product-grid--item">
+        <!-- CQuotient Activity Tracking (viewSearch-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.searchText = 'snoopy';
+	if ( false )
+		cq_params.suggestedSearchText = '__UNDEFINED__';
+	cq_params.products = [{
+	    id: '1003554',
+	    sku: '',
+	    textRelevance: '1.0'
+	}];
+	cq_params.showProducts = 'true';
+	cq_params.personalized = 'false';
+	cq_params.refinements = '[]';
+	cq_params.sortingRule = 'price-high-to-low';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BFJD";
+	cq_params.siteId = "CacauShow";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewSearch',  cq_params);
+	else
+	    window.CQuotient.activities.push({
+			activityType: 'viewSearch',
+			parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewSearchProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.q = 'snoopy';
+		search_params.suggestedSearchText = '';
+		search_params.persd = 'false';
+		search_params.refs = '[]';
+		search_params.sort = 'price-high-to-low';
+		search_params.imageUUID = '';
+		search_params.searchID = '32a0917e-38f0-4b6e-afb8-111c7c5fd76d';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "1003554", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+
+
+
+
+<div class="product" data-pid="1003554" data-uuid="f94effaf6373bd21a49a934591" data-product-name="Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g" data-product-category="P&aacute;scoa/Ovo de P&aacute;scoa Infantil/Ovo de P&aacute;scoa Snoopy" data-product-position="null" data-product-price="129.99" data-product-available="false" data-product-brand="Cacau Show" data-product-list-name="null">
+    <script>
+        if (typeof productsList !== 'undefined') {
+            productsList.push(JSON.parse('\u007b\"uuid\"\u003a\"f94effaf6373bd21a49a934591\"\u002c\"id\"\u003a\"1003554\"\u002c\"productName\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Mochila\u0020Snoopy\u0020170g\"\u002c\"productType\"\u003a\"standard\"\u002c\"brand\"\u003a\"Cacau\u0020Show\"\u002c\"images\"\u003a\u007b\"medium\"\u003a\u005b\u007b\"alt\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Mochila\u0020Snoopy\u0020170g\u002c\u0020\u002c\u0020medium\u002e\"\u002c\"url\"\u003a\"\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw85a2dd45\/medium\/1003554\u005f1\u002epng\"\u002c\"title\"\u003anull\u002c\"index\"\u003a\"0\"\u002c\"absURL\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw85a2dd45\/medium\/1003554\u005f1\u002epng\"\u007d\u005d\u007d\u002c\"rating\"\u003a3\u002e5\u002c\"price\"\u003a\u007b\"sales\"\u003a\u007b\"value\"\u003a129\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024129\u002e99\"\u002c\"decimalPrice\"\u003a\"129\u002e99\"\u007d\u002c\"list\"\u003a\u007b\"value\"\u003a134\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024134\u002e99\"\u002c\"decimalPrice\"\u003a\"134\u002e99\"\u007d\u007d\u002c\"renderedPrice\"\u003a\"\\n\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dprice\\\"\u003e\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dbestPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\\n\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"strike\u002dthrough\u0020list\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"value\\\"\u0020content\u003d\\\"134\u002e99\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdel\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020R\u0024134\u002e99\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/del\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"discountPercentage\u0020d\u002dnone\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020show\u002ethe\u002ediscount\u002eas\u002ea\u002epercentage\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\\n\\n\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dvalue\\\"\u0020content\u003d\\\"129\u002e99\\\"\u003e\u003c\/span\u003e\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u005f\u005fdiscountPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"price\u002dcurrency\\\"\u003eR\u0024\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u003e129\u002e99\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"unit\u002dlabel\\\"\u003e\/un\u003c\/span\u003e\\n\u003c\/div\u003e\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/div\u003e\\n\u0020\u0020\u0020\u0020\\n\\n\u003c\/div\u003e\\n\\n\"\u002c\"variationAttributes\"\u003a\u005b\u007b\"attributeId\"\u003a\"color\"\u002c\"id\"\u003a\"color\"\u002c\"swatchable\"\u003atrue\u002c\"values\"\u003a\u005b\u005d\u007d\u005d\u002c\"review\"\u003a4\u002e6\u002c\"availability\"\u003a\u007b\"messages\"\u003a\u005b\u005d\u002c\"inStockDate\"\u003anull\u007d\u002c\"available\"\u003afalse\u002c\"isPreOrder\"\u003afalse\u002c\"promotions\"\u003anull\u002c\"productLineItemUUID\"\u003anull\u002c\"selectedQuantity\"\u003a1\u002c\"minOrderQuantity\"\u003a1\u002c\"maxOrderQuantity\"\u003a10000\u002c\"loyaltyBadges\"\u003a\u007b\"cacauLoversFactor\"\u003a20\u002c\"cacauLoversPriceValue\"\u003a6\u002c\"amountProduct\"\u003a1\u002c\"templateString\"\u003a\"\u003cp\u003eA\u0020cada\u0020R\u002420\u0020em\u0020compra\u0020de\u0020produtos\u0020ganhe\u00201\u0020cacau\u002e\u003c\/p\u003e\"\u007d\u002c\"isOnWishlist\"\u003afalse\u002c\"categories\"\u003a\u005b\u007b\"htmlValue\"\u003a\"Páscoa\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Infantil\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Snoopy\"\u002c\"url\"\u003a\u007b\u007d\u007d\u005d\u007d'));
+        }
+    </script>
+    
+
+
+<div class="product-tile lazy-loading">
+    
+    
+
+    <script>
+    function pushSelectItem(productEvent) {
+        try {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(productEvent);
+        } catch (error) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'selectItem - pushSelectItem: ' + error.message
+            });
+        }
+    }
+</script>
+
+    <div class="product-tile_wishlist it__shelf--wishlist ">
+    <button
+        class="js-wishlist-btn product-tile_wishlist-btn"
+        data-redirect-url="3"
+        data-redirect-args="addToWishlist=true&pid=1003554"
+        data-add-to-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct?pid=1003554&amp;addToWishlist=true&amp;redirectUrl=3"
+        data-remove-from-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=1003554"
+    >
+        <!-- A future custom tag will be created to handle inline svgs -->
+        <svg class="wishlist-heart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+            <path d="M9 14.5385C9 14.5385 1 10.2308 1 5.15385C1 4.05218 1.43764 2.99563 2.21663 2.21663C2.99563 1.43764 4.05218 1 5.15385 1C6.89154 1 8.38 1.94692 9 3.46154C9.62 1.94692 11.1085 1 12.8462 1C13.9478 1 15.0044 1.43764 15.7834 2.21663C16.5624 2.99563 17 4.05218 17 5.15385C17 10.2308 9 14.5385 9 14.5385Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+
+
+    <div class="tile-head">
+        <div class="product-tile_image">
+    <a href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-mochila-snoopy-170g-1003554.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003554&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:129.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">
+        <img data-src="/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw85a2dd45/medium/1003554_1.png"
+            class="tile-image"
+            alt="Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g"
+            title="Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g"src="on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw85a2dd45/medium/1003554_1.png" />
+    </a>
+</div>
+
+
+        <div class="pdp-link product-name-cap">
+    <a class="link" href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-mochila-snoopy-170g-1003554.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003554&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:129.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">Ovo de P&aacute;scoa ao Leite Mochila Snoopy 170g</a>
+</div>
+
+    </div>
+
+    <div class="lazy-loading">
+        <div class="tile-body">
+            
+
+<ul class="product__promo--list">
+    
+        <li class="cacau-lovers info-icon">
+            <img class="cacau-coin-icon" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb40b1a5b/svg/icon-cacau-coin.svg" alt="" />
+            <span class="badge-text">
+                <strong
+                    class="js-numbers-cacau-lovers numbers-cacau-lovers"
+                    data-price="129.99"
+                    data-basecacauloversprice="20.0"
+                    data-initcacaulovers="6"
+                >
+                    6
+                </strong>
+                <span class="js-label-cacau-lovers">Cacaus</span>
+            </span>
+            <img class="info-choco" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb29b7409/svg/icon-info-choco.svg" alt="" />
+            <span class="tooltip d-none">
+                <p>A cada R$20 em compra de produtos ganhe 1 cacau.</p>
+            </span>
+        </li>
+    
+
+    
+</ul>
+
+
+            <div class="price-wrapper">
+                
+                    <div class="it__shelf--price">
+    
+        <div class="it__shelf--bestPrice">
+            
+            
+
+
+    
+    <span class="strike-through list">
+        <span class="value" content="134.99">
+            <del>
+                R$134.99
+
+
+            </del>
+        </span>
+        <span class="discountPercentage d-none">
+            show.the.discount.as.a.percentage
+        </span>
+    </span>
+
+
+
+
+
+
+    <span class="it__shelf--value" content="129.99"></span>
+
+<div class="it__shelf__discountPrice">
+    <span class="price-currency">R$</span>
+    <span>129.99</span>
+    <span class="unit-label">/un</span>
+</div>
+
+
+
+        </div>
+    
+
+</div>
+
+                
+                
+
+
+
+
+
+
+
+    <div class="stripe">&nbsp;</div>
+
+
+<div class="customQtyInput quantity-null product-detail-is-loading">
+    <div class="customQtyInput__container quantity-form">
+        <button type="button" class="customQtyInput__button customQtyInput__button--minus disabled">
+            <span class="custom_icon custom_icon--minus" aria-hidden="true"></span>
+        </button>
+
+        
+            <input type="number"
+                min="1"
+                max="10000"
+                value="1"
+                class="customQtyInput__value quantity-select quantity"
+                disabled="disabled"
+                data-uuid="null"
+                data-pid="null"
+                data-update-cart="false"
+                data-action="/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"
+                aria-label="quantity: 1"
+                data-pre-select-qty=undefined id=quantity-undefined name=quantity-undefined>
+        
+
+        <button type="button" class="customQtyInput__button customQtyInput__button--plus ">
+            <span class="custom_icon custom_icon--plus" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="stripe-button">&nbsp;</div>
+
+<div class="product-detail-is-loading product-tile_buy">
+    <button class="product-tile_cart-btn it__shelf--btn">
+        <span class="cart-button_txt available-text">
+            Adicionar ao carrinho
+        </span>
+        <span class="icon-cart"></span>
+        <span class="cart-button_txt unavailable-text">
+            Produto Indispon&iacute;vel
+        </span>
+    </button>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="product-grid--item">
+        <!-- CQuotient Activity Tracking (viewSearch-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.searchText = 'snoopy';
+	if ( false )
+		cq_params.suggestedSearchText = '__UNDEFINED__';
+	cq_params.products = [{
+	    id: '1003620',
+	    sku: '',
+	    textRelevance: '0.8089485'
+	}];
+	cq_params.showProducts = 'true';
+	cq_params.personalized = 'false';
+	cq_params.refinements = '[]';
+	cq_params.sortingRule = 'price-high-to-low';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BFJD";
+	cq_params.siteId = "CacauShow";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewSearch',  cq_params);
+	else
+	    window.CQuotient.activities.push({
+			activityType: 'viewSearch',
+			parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewSearchProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.q = 'snoopy';
+		search_params.suggestedSearchText = '';
+		search_params.persd = 'false';
+		search_params.refs = '[]';
+		search_params.sort = 'price-high-to-low';
+		search_params.imageUUID = '';
+		search_params.searchID = '32a0917e-38f0-4b6e-afb8-111c7c5fd76d';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "1003620", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+
+
+
+
+<div class="product" data-pid="1003620" data-uuid="09616e6626e076a60fd663b95f" data-product-name="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g" data-product-category="P&aacute;scoa/Ovo de P&aacute;scoa Infantil/Ovo de P&aacute;scoa Snoopy" data-product-position="null" data-product-price="109.99" data-product-available="false" data-product-brand="Cacau Show" data-product-list-name="null">
+    <script>
+        if (typeof productsList !== 'undefined') {
+            productsList.push(JSON.parse('\u007b\"uuid\"\u003a\"09616e6626e076a60fd663b95f\"\u002c\"id\"\u003a\"1003620\"\u002c\"productName\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Pelúcia\u0020Snoopy\u0020com\u0020Charlie\u0020Brown\u0020170g\"\u002c\"productType\"\u003a\"standard\"\u002c\"brand\"\u003a\"Cacau\u0020Show\"\u002c\"images\"\u003a\u007b\"medium\"\u003a\u005b\u007b\"alt\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Pelúcia\u0020Snoopy\u0020com\u0020Charlie\u0020Brown\u0020170g\u002c\u0020\u002c\u0020medium\u002e\"\u002c\"url\"\u003a\"\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw76052675\/medium\/1003620\u005f1\u002epng\"\u002c\"title\"\u003anull\u002c\"index\"\u003a\"0\"\u002c\"absURL\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw76052675\/medium\/1003620\u005f1\u002epng\"\u007d\u005d\u007d\u002c\"rating\"\u003a3\u002e9\u002c\"price\"\u003a\u007b\"sales\"\u003a\u007b\"value\"\u003a109\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024109\u002e99\"\u002c\"decimalPrice\"\u003a\"109\u002e99\"\u007d\u002c\"list\"\u003a\u007b\"value\"\u003a114\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024114\u002e99\"\u002c\"decimalPrice\"\u003a\"114\u002e99\"\u007d\u007d\u002c\"renderedPrice\"\u003a\"\\n\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dprice\\\"\u003e\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dbestPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\\n\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"strike\u002dthrough\u0020list\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"value\\\"\u0020content\u003d\\\"114\u002e99\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdel\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020R\u0024114\u002e99\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/del\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"discountPercentage\u0020d\u002dnone\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020show\u002ethe\u002ediscount\u002eas\u002ea\u002epercentage\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\\n\\n\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dvalue\\\"\u0020content\u003d\\\"109\u002e99\\\"\u003e\u003c\/span\u003e\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u005f\u005fdiscountPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"price\u002dcurrency\\\"\u003eR\u0024\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u003e109\u002e99\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"unit\u002dlabel\\\"\u003e\/un\u003c\/span\u003e\\n\u003c\/div\u003e\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/div\u003e\\n\u0020\u0020\u0020\u0020\\n\\n\u003c\/div\u003e\\n\\n\"\u002c\"variationAttributes\"\u003a\u005b\u007b\"attributeId\"\u003a\"color\"\u002c\"id\"\u003a\"color\"\u002c\"swatchable\"\u003atrue\u002c\"values\"\u003a\u005b\u005d\u007d\u005d\u002c\"review\"\u003a4\u002e6\u002c\"availability\"\u003a\u007b\"messages\"\u003a\u005b\u005d\u002c\"inStockDate\"\u003anull\u007d\u002c\"available\"\u003afalse\u002c\"isPreOrder\"\u003afalse\u002c\"promotions\"\u003anull\u002c\"productLineItemUUID\"\u003anull\u002c\"selectedQuantity\"\u003a1\u002c\"minOrderQuantity\"\u003a1\u002c\"maxOrderQuantity\"\u003a10000\u002c\"loyaltyBadges\"\u003a\u007b\"cacauLoversFactor\"\u003a20\u002c\"cacauLoversPriceValue\"\u003a5\u002c\"amountProduct\"\u003a1\u002c\"templateString\"\u003a\"\u003cp\u003eA\u0020cada\u0020R\u002420\u0020em\u0020compra\u0020de\u0020produtos\u0020ganhe\u00201\u0020cacau\u002e\u003c\/p\u003e\"\u007d\u002c\"isOnWishlist\"\u003afalse\u002c\"categories\"\u003a\u005b\u007b\"htmlValue\"\u003a\"Páscoa\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Infantil\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Snoopy\"\u002c\"url\"\u003a\u007b\u007d\u007d\u005d\u007d'));
+        }
+    </script>
+    
+
+
+<div class="product-tile lazy-loading">
+    
+    
+
+    <script>
+    function pushSelectItem(productEvent) {
+        try {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(productEvent);
+        } catch (error) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'selectItem - pushSelectItem: ' + error.message
+            });
+        }
+    }
+</script>
+
+    <div class="product-tile_wishlist it__shelf--wishlist ">
+    <button
+        class="js-wishlist-btn product-tile_wishlist-btn"
+        data-redirect-url="3"
+        data-redirect-args="addToWishlist=true&pid=1003620"
+        data-add-to-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct?pid=1003620&amp;addToWishlist=true&amp;redirectUrl=3"
+        data-remove-from-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=1003620"
+    >
+        <!-- A future custom tag will be created to handle inline svgs -->
+        <svg class="wishlist-heart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+            <path d="M9 14.5385C9 14.5385 1 10.2308 1 5.15385C1 4.05218 1.43764 2.99563 2.21663 2.21663C2.99563 1.43764 4.05218 1 5.15385 1C6.89154 1 8.38 1.94692 9 3.46154C9.62 1.94692 11.1085 1 12.8462 1C13.9478 1 15.0044 1.43764 15.7834 2.21663C16.5624 2.99563 17 4.05218 17 5.15385C17 10.2308 9 14.5385 9 14.5385Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+
+
+    <div class="tile-head">
+        <div class="product-tile_image">
+    <a href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-pel%C3%83%C2%BAcia-snoopy-com-charlie-brown-170g-1003620.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003620&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:109.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">
+        <img data-src="/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw76052675/medium/1003620_1.png"
+            class="tile-image"
+            alt="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g"
+            title="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g"src="on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw76052675/medium/1003620_1.png" />
+    </a>
+</div>
+
+
+        <div class="pdp-link product-name-cap">
+    <a class="link" href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-pel%C3%83%C2%BAcia-snoopy-com-charlie-brown-170g-1003620.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003620&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:109.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Charlie Brown 170g</a>
+</div>
+
+    </div>
+
+    <div class="lazy-loading">
+        <div class="tile-body">
+            
+
+<ul class="product__promo--list">
+    
+        <li class="cacau-lovers info-icon">
+            <img class="cacau-coin-icon" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb40b1a5b/svg/icon-cacau-coin.svg" alt="" />
+            <span class="badge-text">
+                <strong
+                    class="js-numbers-cacau-lovers numbers-cacau-lovers"
+                    data-price="109.99"
+                    data-basecacauloversprice="20.0"
+                    data-initcacaulovers="5"
+                >
+                    5
+                </strong>
+                <span class="js-label-cacau-lovers">Cacaus</span>
+            </span>
+            <img class="info-choco" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb29b7409/svg/icon-info-choco.svg" alt="" />
+            <span class="tooltip d-none">
+                <p>A cada R$20 em compra de produtos ganhe 1 cacau.</p>
+            </span>
+        </li>
+    
+
+    
+</ul>
+
+
+            <div class="price-wrapper">
+                
+                    <div class="it__shelf--price">
+    
+        <div class="it__shelf--bestPrice">
+            
+            
+
+
+    
+    <span class="strike-through list">
+        <span class="value" content="114.99">
+            <del>
+                R$114.99
+
+
+            </del>
+        </span>
+        <span class="discountPercentage d-none">
+            show.the.discount.as.a.percentage
+        </span>
+    </span>
+
+
+
+
+
+
+    <span class="it__shelf--value" content="109.99"></span>
+
+<div class="it__shelf__discountPrice">
+    <span class="price-currency">R$</span>
+    <span>109.99</span>
+    <span class="unit-label">/un</span>
+</div>
+
+
+
+        </div>
+    
+
+</div>
+
+                
+                
+
+
+
+
+
+
+
+    <div class="stripe">&nbsp;</div>
+
+
+<div class="customQtyInput quantity-null product-detail-is-loading">
+    <div class="customQtyInput__container quantity-form">
+        <button type="button" class="customQtyInput__button customQtyInput__button--minus disabled">
+            <span class="custom_icon custom_icon--minus" aria-hidden="true"></span>
+        </button>
+
+        
+            <input type="number"
+                min="1"
+                max="10000"
+                value="1"
+                class="customQtyInput__value quantity-select quantity"
+                disabled="disabled"
+                data-uuid="null"
+                data-pid="null"
+                data-update-cart="false"
+                data-action="/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"
+                aria-label="quantity: 1"
+                data-pre-select-qty=undefined id=quantity-undefined name=quantity-undefined>
+        
+
+        <button type="button" class="customQtyInput__button customQtyInput__button--plus ">
+            <span class="custom_icon custom_icon--plus" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="stripe-button">&nbsp;</div>
+
+<div class="product-detail-is-loading product-tile_buy">
+    <button class="product-tile_cart-btn it__shelf--btn">
+        <span class="cart-button_txt available-text">
+            Adicionar ao carrinho
+        </span>
+        <span class="icon-cart"></span>
+        <span class="cart-button_txt unavailable-text">
+            Produto Indispon&iacute;vel
+        </span>
+    </button>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="product-grid--item">
+        <!-- CQuotient Activity Tracking (viewSearch-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.searchText = 'snoopy';
+	if ( false )
+		cq_params.suggestedSearchText = '__UNDEFINED__';
+	cq_params.products = [{
+	    id: '1003619',
+	    sku: '',
+	    textRelevance: '0.8239524'
+	}];
+	cq_params.showProducts = 'true';
+	cq_params.personalized = 'false';
+	cq_params.refinements = '[]';
+	cq_params.sortingRule = 'price-high-to-low';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BFJD";
+	cq_params.siteId = "CacauShow";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewSearch',  cq_params);
+	else
+	    window.CQuotient.activities.push({
+			activityType: 'viewSearch',
+			parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewSearchProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.q = 'snoopy';
+		search_params.suggestedSearchText = '';
+		search_params.persd = 'false';
+		search_params.refs = '[]';
+		search_params.sort = 'price-high-to-low';
+		search_params.imageUUID = '';
+		search_params.searchID = '32a0917e-38f0-4b6e-afb8-111c7c5fd76d';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "1003619", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+
+
+
+
+<div class="product" data-pid="1003619" data-uuid="4071b3cc6af7586614cda6308b" data-product-name="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g" data-product-category="P&aacute;scoa/Ovo de P&aacute;scoa Infantil/Ovo de P&aacute;scoa Snoopy" data-product-position="null" data-product-price="109.99" data-product-available="false" data-product-brand="Cacau Show" data-product-list-name="null">
+    <script>
+        if (typeof productsList !== 'undefined') {
+            productsList.push(JSON.parse('\u007b\"uuid\"\u003a\"4071b3cc6af7586614cda6308b\"\u002c\"id\"\u003a\"1003619\"\u002c\"productName\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Pelúcia\u0020Snoopy\u0020com\u0020Woodstock\u0020170g\"\u002c\"productType\"\u003a\"standard\"\u002c\"brand\"\u003a\"Cacau\u0020Show\"\u002c\"images\"\u003a\u007b\"medium\"\u003a\u005b\u007b\"alt\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020ao\u0020Leite\u0020Pelúcia\u0020Snoopy\u0020com\u0020Woodstock\u0020170g\u002c\u0020\u002c\u0020medium\u002e\"\u002c\"url\"\u003a\"\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dwa252b162\/medium\/1003619\u005f1\u002epng\"\u002c\"title\"\u003anull\u002c\"index\"\u003a\"0\"\u002c\"absURL\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dwa252b162\/medium\/1003619\u005f1\u002epng\"\u007d\u005d\u007d\u002c\"rating\"\u003a5\u002c\"price\"\u003a\u007b\"sales\"\u003a\u007b\"value\"\u003a109\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024109\u002e99\"\u002c\"decimalPrice\"\u003a\"109\u002e99\"\u007d\u002c\"list\"\u003a\u007b\"value\"\u003a114\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u0024114\u002e99\"\u002c\"decimalPrice\"\u003a\"114\u002e99\"\u007d\u007d\u002c\"renderedPrice\"\u003a\"\\n\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dprice\\\"\u003e\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dbestPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\\n\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"strike\u002dthrough\u0020list\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"value\\\"\u0020content\u003d\\\"114\u002e99\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdel\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020R\u0024114\u002e99\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/del\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"discountPercentage\u0020d\u002dnone\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020show\u002ethe\u002ediscount\u002eas\u002ea\u002epercentage\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\\n\\n\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dvalue\\\"\u0020content\u003d\\\"109\u002e99\\\"\u003e\u003c\/span\u003e\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u005f\u005fdiscountPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"price\u002dcurrency\\\"\u003eR\u0024\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u003e109\u002e99\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"unit\u002dlabel\\\"\u003e\/un\u003c\/span\u003e\\n\u003c\/div\u003e\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/div\u003e\\n\u0020\u0020\u0020\u0020\\n\\n\u003c\/div\u003e\\n\\n\"\u002c\"variationAttributes\"\u003a\u005b\u007b\"attributeId\"\u003a\"color\"\u002c\"id\"\u003a\"color\"\u002c\"swatchable\"\u003atrue\u002c\"values\"\u003a\u005b\u005d\u007d\u005d\u002c\"review\"\u003a4\u002e6\u002c\"availability\"\u003a\u007b\"messages\"\u003a\u005b\u005d\u002c\"inStockDate\"\u003anull\u007d\u002c\"available\"\u003afalse\u002c\"isPreOrder\"\u003afalse\u002c\"promotions\"\u003anull\u002c\"productLineItemUUID\"\u003anull\u002c\"selectedQuantity\"\u003a1\u002c\"minOrderQuantity\"\u003a1\u002c\"maxOrderQuantity\"\u003a10000\u002c\"loyaltyBadges\"\u003a\u007b\"cacauLoversFactor\"\u003a20\u002c\"cacauLoversPriceValue\"\u003a5\u002c\"amountProduct\"\u003a1\u002c\"templateString\"\u003a\"\u003cp\u003eA\u0020cada\u0020R\u002420\u0020em\u0020compra\u0020de\u0020produtos\u0020ganhe\u00201\u0020cacau\u002e\u003c\/p\u003e\"\u007d\u002c\"isOnWishlist\"\u003afalse\u002c\"categories\"\u003a\u005b\u007b\"htmlValue\"\u003a\"Páscoa\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Infantil\"\u002c\"url\"\u003a\u007b\u007d\u007d\u002c\u007b\"htmlValue\"\u003a\"Ovo\u0020de\u0020Páscoa\u0020Snoopy\"\u002c\"url\"\u003a\u007b\u007d\u007d\u005d\u007d'));
+        }
+    </script>
+    
+
+
+<div class="product-tile lazy-loading">
+    
+    
+
+    <script>
+    function pushSelectItem(productEvent) {
+        try {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(productEvent);
+        } catch (error) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'selectItem - pushSelectItem: ' + error.message
+            });
+        }
+    }
+</script>
+
+    <div class="product-tile_wishlist it__shelf--wishlist ">
+    <button
+        class="js-wishlist-btn product-tile_wishlist-btn"
+        data-redirect-url="3"
+        data-redirect-args="addToWishlist=true&pid=1003619"
+        data-add-to-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct?pid=1003619&amp;addToWishlist=true&amp;redirectUrl=3"
+        data-remove-from-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=1003619"
+    >
+        <!-- A future custom tag will be created to handle inline svgs -->
+        <svg class="wishlist-heart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+            <path d="M9 14.5385C9 14.5385 1 10.2308 1 5.15385C1 4.05218 1.43764 2.99563 2.21663 2.21663C2.99563 1.43764 4.05218 1 5.15385 1C6.89154 1 8.38 1.94692 9 3.46154C9.62 1.94692 11.1085 1 12.8462 1C13.9478 1 15.0044 1.43764 15.7834 2.21663C16.5624 2.99563 17 4.05218 17 5.15385C17 10.2308 9 14.5385 9 14.5385Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+
+
+    <div class="tile-head">
+        <div class="product-tile_image">
+    <a href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-pel%C3%83%C2%BAcia-snoopy-com-woodstock-170g-1003619.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003619&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:109.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">
+        <img data-src="/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dwa252b162/medium/1003619_1.png"
+            class="tile-image"
+            alt="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g"
+            title="Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g"src="on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dwa252b162/medium/1003619_1.png" />
+    </a>
+</div>
+
+
+        <div class="pdp-link product-name-cap">
+    <a class="link" href="https://www.cacaushow.com.br/produto/ovo-de-p%C3%83%C2%A1scoa-ao-leite-pel%C3%83%C2%BAcia-snoopy-com-woodstock-170g-1003619.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;1003619&quot;,&quot;item_name&quot;:&quot;Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:109.99,&quot;item_category&quot;:&quot;P&aacute;scoa&quot;,&quot;item_category1&quot;:&quot;Ovo de P&aacute;scoa Infantil&quot;,&quot;item_category2&quot;:&quot;Ovo de P&aacute;scoa Snoopy&quot;}]}})">Ovo de P&aacute;scoa ao Leite Pel&uacute;cia Snoopy com Woodstock 170g</a>
+</div>
+
+    </div>
+
+    <div class="lazy-loading">
+        <div class="tile-body">
+            
+
+<ul class="product__promo--list">
+    
+        <li class="cacau-lovers info-icon">
+            <img class="cacau-coin-icon" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb40b1a5b/svg/icon-cacau-coin.svg" alt="" />
+            <span class="badge-text">
+                <strong
+                    class="js-numbers-cacau-lovers numbers-cacau-lovers"
+                    data-price="109.99"
+                    data-basecacauloversprice="20.0"
+                    data-initcacaulovers="5"
+                >
+                    5
+                </strong>
+                <span class="js-label-cacau-lovers">Cacaus</span>
+            </span>
+            <img class="info-choco" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb29b7409/svg/icon-info-choco.svg" alt="" />
+            <span class="tooltip d-none">
+                <p>A cada R$20 em compra de produtos ganhe 1 cacau.</p>
+            </span>
+        </li>
+    
+
+    
+</ul>
+
+
+            <div class="price-wrapper">
+                
+                    <div class="it__shelf--price">
+    
+        <div class="it__shelf--bestPrice">
+            
+            
+
+
+    
+    <span class="strike-through list">
+        <span class="value" content="114.99">
+            <del>
+                R$114.99
+
+
+            </del>
+        </span>
+        <span class="discountPercentage d-none">
+            show.the.discount.as.a.percentage
+        </span>
+    </span>
+
+
+
+
+
+
+    <span class="it__shelf--value" content="109.99"></span>
+
+<div class="it__shelf__discountPrice">
+    <span class="price-currency">R$</span>
+    <span>109.99</span>
+    <span class="unit-label">/un</span>
+</div>
+
+
+
+        </div>
+    
+
+</div>
+
+                
+                
+
+
+
+
+
+
+
+    <div class="stripe">&nbsp;</div>
+
+
+<div class="customQtyInput quantity-null product-detail-is-loading">
+    <div class="customQtyInput__container quantity-form">
+        <button type="button" class="customQtyInput__button customQtyInput__button--minus disabled">
+            <span class="custom_icon custom_icon--minus" aria-hidden="true"></span>
+        </button>
+
+        
+            <input type="number"
+                min="1"
+                max="10000"
+                value="1"
+                class="customQtyInput__value quantity-select quantity"
+                disabled="disabled"
+                data-uuid="null"
+                data-pid="null"
+                data-update-cart="false"
+                data-action="/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"
+                aria-label="quantity: 1"
+                data-pre-select-qty=undefined id=quantity-undefined name=quantity-undefined>
+        
+
+        <button type="button" class="customQtyInput__button customQtyInput__button--plus ">
+            <span class="custom_icon custom_icon--plus" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="stripe-button">&nbsp;</div>
+
+<div class="product-detail-is-loading product-tile_buy">
+    <button class="product-tile_cart-btn it__shelf--btn">
+        <span class="cart-button_txt available-text">
+            Adicionar ao carrinho
+        </span>
+        <span class="icon-cart"></span>
+        <span class="cart-button_txt unavailable-text">
+            Produto Indispon&iacute;vel
+        </span>
+    </button>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="product-grid--item">
+        <!-- CQuotient Activity Tracking (viewSearch-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.searchText = 'snoopy';
+	if ( false )
+		cq_params.suggestedSearchText = '__UNDEFINED__';
+	cq_params.products = [{
+	    id: '2004802',
+	    sku: '',
+	    textRelevance: '0.9234841'
+	}];
+	cq_params.showProducts = 'true';
+	cq_params.personalized = 'false';
+	cq_params.refinements = '[]';
+	cq_params.sortingRule = 'price-high-to-low';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BFJD";
+	cq_params.siteId = "CacauShow";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewSearch',  cq_params);
+	else
+	    window.CQuotient.activities.push({
+			activityType: 'viewSearch',
+			parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewSearchProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.q = 'snoopy';
+		search_params.suggestedSearchText = '';
+		search_params.persd = 'false';
+		search_params.refs = '[]';
+		search_params.sort = 'price-high-to-low';
+		search_params.imageUUID = '';
+		search_params.searchID = '32a0917e-38f0-4b6e-afb8-111c7c5fd76d';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "2004802", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+
+
+
+
+<div class="product" data-pid="2004802" data-uuid="97bf84eb8ce8eeedea868dce1a" data-product-name="Pel&uacute;cia do Snoopy de Natal" data-product-category="Natal" data-product-position="null" data-product-price="44.99" data-product-available="false" data-product-brand="null" data-product-list-name="null">
+    <script>
+        if (typeof productsList !== 'undefined') {
+            productsList.push(JSON.parse('\u007b\"uuid\"\u003a\"97bf84eb8ce8eeedea868dce1a\"\u002c\"id\"\u003a\"2004802\"\u002c\"productName\"\u003a\"Pelúcia\u0020do\u0020Snoopy\u0020de\u0020Natal\"\u002c\"productType\"\u003a\"standard\"\u002c\"brand\"\u003anull\u002c\"images\"\u003a\u007b\"medium\"\u003a\u005b\u007b\"alt\"\u003a\"Pelúcia\u0020do\u0020Snoopy\u0020de\u0020Natal\u002c\u0020\u002c\u0020medium\u002e\"\u002c\"url\"\u003a\"\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw0e75ace7\/medium\/2004802\u005f1\u002epng\"\u002c\"title\"\u003anull\u002c\"index\"\u003a\"0\"\u002c\"absURL\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estatic\/\u002d\/Sites\u002dmasterCatalog\u005fCacauShow\/default\/dw0e75ace7\/medium\/2004802\u005f1\u002epng\"\u007d\u005d\u007d\u002c\"rating\"\u003a4\u002e3\u002c\"price\"\u003a\u007b\"sales\"\u003a\u007b\"value\"\u003a44\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u002444\u002e99\"\u002c\"decimalPrice\"\u003a\"44\u002e99\"\u007d\u002c\"list\"\u003a\u007b\"value\"\u003a49\u002e99\u002c\"currency\"\u003a\"BRL\"\u002c\"formatted\"\u003a\"R\u002449\u002e99\"\u002c\"decimalPrice\"\u003a\"49\u002e99\"\u007d\u007d\u002c\"renderedPrice\"\u003a\"\\n\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dprice\\\"\u003e\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dbestPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\\n\\n\\n\u0020\u0020\u0020\u0020\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"strike\u002dthrough\u0020list\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"value\\\"\u0020content\u003d\\\"49\u002e99\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cdel\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020R\u002449\u002e99\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/del\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"discountPercentage\u0020d\u002dnone\\\"\u003e\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020show\u002ethe\u002ediscount\u002eas\u002ea\u002epercentage\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003c\/span\u003e\\n\\n\\n\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"it\u005f\u005fshelf\u002d\u002dvalue\\\"\u0020content\u003d\\\"44\u002e99\\\"\u003e\u003c\/span\u003e\\n\\n\u003cdiv\u0020class\u003d\\\"it\u005f\u005fshelf\u005f\u005fdiscountPrice\\\"\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"price\u002dcurrency\\\"\u003eR\u0024\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u003e44\u002e99\u003c\/span\u003e\\n\u0020\u0020\u0020\u0020\u003cspan\u0020class\u003d\\\"unit\u002dlabel\\\"\u003e\/un\u003c\/span\u003e\\n\u003c\/div\u003e\\n\\n\\n\\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003c\/div\u003e\\n\u0020\u0020\u0020\u0020\\n\\n\u003c\/div\u003e\\n\\n\"\u002c\"variationAttributes\"\u003a\u005b\u007b\"attributeId\"\u003a\"color\"\u002c\"id\"\u003a\"color\"\u002c\"swatchable\"\u003atrue\u002c\"values\"\u003a\u005b\u005d\u007d\u005d\u002c\"review\"\u003a4\u002e6\u002c\"availability\"\u003a\u007b\"messages\"\u003a\u005b\u005d\u002c\"inStockDate\"\u003anull\u007d\u002c\"available\"\u003afalse\u002c\"isPreOrder\"\u003afalse\u002c\"promotions\"\u003anull\u002c\"productLineItemUUID\"\u003anull\u002c\"selectedQuantity\"\u003a1\u002c\"minOrderQuantity\"\u003a1\u002c\"maxOrderQuantity\"\u003a10000\u002c\"loyaltyBadges\"\u003a\u007b\"cacauLoversFactor\"\u003a20\u002c\"cacauLoversPriceValue\"\u003a2\u002c\"amountProduct\"\u003a1\u002c\"templateString\"\u003a\"\u003cp\u003eA\u0020cada\u0020R\u002420\u0020em\u0020compra\u0020de\u0020produtos\u0020ganhe\u00201\u0020cacau\u002e\u003c\/p\u003e\"\u007d\u002c\"isOnWishlist\"\u003afalse\u002c\"categories\"\u003a\u005b\u007b\"htmlValue\"\u003a\"Natal\"\u002c\"url\"\u003a\u007b\u007d\u007d\u005d\u007d'));
+        }
+    </script>
+    
+
+
+<div class="product-tile lazy-loading">
+    
+    
+
+    <script>
+    function pushSelectItem(productEvent) {
+        try {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(productEvent);
+        } catch (error) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'dataLayerError',
+                error: 'selectItem - pushSelectItem: ' + error.message
+            });
+        }
+    }
+</script>
+
+    <div class="product-tile_wishlist it__shelf--wishlist ">
+    <button
+        class="js-wishlist-btn product-tile_wishlist-btn"
+        data-redirect-url="3"
+        data-redirect-args="addToWishlist=true&pid=2004802"
+        data-add-to-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-AddProduct?pid=2004802&amp;addToWishlist=true&amp;redirectUrl=3"
+        data-remove-from-wishlist="/on/demandware.store/Sites-CacauShow-Site/default/Wishlist-RemoveProduct?pid=2004802"
+    >
+        <!-- A future custom tag will be created to handle inline svgs -->
+        <svg class="wishlist-heart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+            <path d="M9 14.5385C9 14.5385 1 10.2308 1 5.15385C1 4.05218 1.43764 2.99563 2.21663 2.21663C2.99563 1.43764 4.05218 1 5.15385 1C6.89154 1 8.38 1.94692 9 3.46154C9.62 1.94692 11.1085 1 12.8462 1C13.9478 1 15.0044 1.43764 15.7834 2.21663C16.5624 2.99563 17 4.05218 17 5.15385C17 10.2308 9 14.5385 9 14.5385Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</div>
+
+
+
+    <div class="tile-head">
+        <div class="product-tile_image">
+    <a href="https://www.cacaushow.com.br/produto/pel%C3%83%C2%BAcia-do-snoopy-de-natal-2004802.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;2004802&quot;,&quot;item_name&quot;:&quot;Pel&uacute;cia do Snoopy de Natal&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:44.99,&quot;item_category&quot;:&quot;Natal&quot;}]}})">
+        <img data-src="/on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw0e75ace7/medium/2004802_1.png"
+            class="tile-image"
+            alt="Pel&uacute;cia do Snoopy de Natal"
+            title="Pel&uacute;cia do Snoopy de Natal"src="on/demandware.static/-/Sites-masterCatalog_CacauShow/default/dw0e75ace7/medium/2004802_1.png" />
+    </a>
+</div>
+
+
+        <div class="pdp-link product-name-cap">
+    <a class="link" href="https://www.cacaushow.com.br/produto/pel%C3%83%C2%BAcia-do-snoopy-de-natal-2004802.html" onclick="pushSelectItem({&quot;event&quot;:&quot;select_item&quot;,&quot;ecommerce&quot;:{&quot;items&quot;:[{&quot;item_id&quot;:&quot;2004802&quot;,&quot;item_name&quot;:&quot;Pel&uacute;cia do Snoopy de Natal&quot;,&quot;item_variant&quot;:&quot;standard&quot;,&quot;price&quot;:44.99,&quot;item_category&quot;:&quot;Natal&quot;}]}})">Pel&uacute;cia do Snoopy de Natal</a>
+</div>
+
+    </div>
+
+    <div class="lazy-loading">
+        <div class="tile-body">
+            
+
+<ul class="product__promo--list">
+    
+        <li class="cacau-lovers info-icon">
+            <img class="cacau-coin-icon" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb40b1a5b/svg/icon-cacau-coin.svg" alt="" />
+            <span class="badge-text">
+                <strong
+                    class="js-numbers-cacau-lovers numbers-cacau-lovers"
+                    data-price="44.99"
+                    data-basecacauloversprice="20.0"
+                    data-initcacaulovers="2"
+                >
+                    2
+                </strong>
+                <span class="js-label-cacau-lovers">Cacaus</span>
+            </span>
+            <img class="info-choco" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwb29b7409/svg/icon-info-choco.svg" alt="" />
+            <span class="tooltip d-none">
+                <p>A cada R$20 em compra de produtos ganhe 1 cacau.</p>
+            </span>
+        </li>
+    
+
+    
+</ul>
+
+
+            <div class="price-wrapper">
+                
+                    <div class="it__shelf--price">
+    
+        <div class="it__shelf--bestPrice">
+            
+            
+
+
+    
+    <span class="strike-through list">
+        <span class="value" content="49.99">
+            <del>
+                R$49.99
+
+
+            </del>
+        </span>
+        <span class="discountPercentage d-none">
+            show.the.discount.as.a.percentage
+        </span>
+    </span>
+
+
+
+
+
+
+    <span class="it__shelf--value" content="44.99"></span>
+
+<div class="it__shelf__discountPrice">
+    <span class="price-currency">R$</span>
+    <span>44.99</span>
+    <span class="unit-label">/un</span>
+</div>
+
+
+
+        </div>
+    
+
+</div>
+
+                
+                
+
+
+
+
+
+
+
+    <div class="stripe">&nbsp;</div>
+
+
+<div class="customQtyInput quantity-null product-detail-is-loading">
+    <div class="customQtyInput__container quantity-form">
+        <button type="button" class="customQtyInput__button customQtyInput__button--minus disabled">
+            <span class="custom_icon custom_icon--minus" aria-hidden="true"></span>
+        </button>
+
+        
+            <input type="number"
+                min="1"
+                max="10000"
+                value="1"
+                class="customQtyInput__value quantity-select quantity"
+                disabled="disabled"
+                data-uuid="null"
+                data-pid="null"
+                data-update-cart="false"
+                data-action="/on/demandware.store/Sites-CacauShow-Site/default/Cart-UpdateQuantity"
+                aria-label="quantity: 1"
+                data-pre-select-qty=undefined id=quantity-undefined name=quantity-undefined>
+        
+
+        <button type="button" class="customQtyInput__button customQtyInput__button--plus ">
+            <span class="custom_icon custom_icon--plus" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="stripe-button">&nbsp;</div>
+
+<div class="product-detail-is-loading product-tile_buy">
+    <button class="product-tile_cart-btn it__shelf--btn">
+        <span class="cart-button_txt available-text">
+            Adicionar ao carrinho
+        </span>
+        <span class="icon-cart"></span>
+        <span class="cart-button_txt unavailable-text">
+            Produto Indispon&iacute;vel
+        </span>
+    </button>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+
+
+<div class="col-12 grid-footer"
+     data-sort-options="{&quot;options&quot;:[{&quot;displayName&quot;:&quot;Menor Pre&ccedil;o&quot;,&quot;id&quot;:&quot;price-low-to-high&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=price-low-to-high&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;Maior Pre&ccedil;o&quot;,&quot;id&quot;:&quot;price-high-to-low&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=price-high-to-low&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;Mais Vendidos&quot;,&quot;id&quot;:&quot;top-sellers&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=top-sellers&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;Melhores Avalia&ccedil;&otilde;es&quot;,&quot;id&quot;:&quot;customer-favorites&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=customer-favorites&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;A - Z&quot;,&quot;id&quot;:&quot;product-name-ascending&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=product-name-ascending&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;Z - A&quot;,&quot;id&quot;:&quot;product-name-descending&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=product-name-descending&amp;start=0&amp;sz=4&quot;},{&quot;displayName&quot;:&quot;Data de lan&ccedil;amento&quot;,&quot;id&quot;:&quot;most-recent&quot;,&quot;url&quot;:&quot;https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Search-UpdateGrid?q=snoopy&amp;srule=most-recent&amp;start=0&amp;sz=4&quot;}],&quot;ruleId&quot;:&quot;price-high-to-low&quot;}"
+     data-page-size="9"
+     data-page-number="0"
+>
+    
+    
+
+    <input type="hidden" class="permalink" value="https://www.cacaushow.com.br/busca?q=snoopy&amp;start=0&amp;sz=9" />
+    
+</div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                
+                                <div class="back-to-top-container">
+                                    <a href="busca@q=snoopy.html#" class="btn-back-to-top">
+                                        Voltar ao Topo
+                                    </a>
+                                    <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dw2c93f54a/svg/arrow-up.svg" alt="alt.arrow.up" />
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                
+                <div class="tab-pane container" id="content-search-results-pane" role="tabpanel" aria-labelledby="articles-tab">
+                    <div id="content-search-results" class="content-grid-header"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        pushEvents(productsList, JSON.parse('\u007b\"pageSize\"\u003a9\u002c\"productSearch\"\u003a\u007b\u007d\u002c\"isSearchSuggestionsAvailable\"\u003atrue\u002c\"suggestionPhrases\"\u003a\u005b\u007b\"value\"\u003a\"snoopy\"\u002c\"url\"\u003a\u007b\u007d\u007d\u005d\u002c\"pageNumber\"\u003a0\u002c\"count\"\u003a4\u002c\"isCategorySearch\"\u003afalse\u002c\"isRefinedCategorySearch\"\u003afalse\u002c\"searchKeywords\"\u003a\"snoopy\"\u002c\"resetLink\"\u003a\u007b\u007d\u002c\"bannerImageUrl\"\u003anull\u002c\"productIds\"\u003a\u005b\u007b\"productID\"\u003a\"1003554\"\u002c\"productSearchHit\"\u003a\u007b\u007d\u007d\u002c\u007b\"productID\"\u003a\"1003620\"\u002c\"productSearchHit\"\u003a\u007b\u007d\u007d\u002c\u007b\"productID\"\u003a\"1003619\"\u002c\"productSearchHit\"\u003a\u007b\u007d\u007d\u002c\u007b\"productID\"\u003a\"2004802\"\u002c\"productSearchHit\"\u003a\u007b\u007d\u007d\u005d\u002c\"productSort\"\u003a\u007b\"options\"\u003a\u005b\u007b\"displayName\"\u003a\"Menor\u0020Preço\"\u002c\"id\"\u003a\"price\u002dlow\u002dto\u002dhigh\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dprice\u002dlow\u002dto\u002dhigh\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"Maior\u0020Preço\"\u002c\"id\"\u003a\"price\u002dhigh\u002dto\u002dlow\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dprice\u002dhigh\u002dto\u002dlow\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"Mais\u0020Vendidos\"\u002c\"id\"\u003a\"top\u002dsellers\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dtop\u002dsellers\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"Melhores\u0020Avaliações\"\u002c\"id\"\u003a\"customer\u002dfavorites\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dcustomer\u002dfavorites\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"A\u0020\u002d\u0020Z\"\u002c\"id\"\u003a\"product\u002dname\u002dascending\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dproduct\u002dname\u002dascending\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"Z\u0020\u002d\u0020A\"\u002c\"id\"\u003a\"product\u002dname\u002ddescending\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dproduct\u002dname\u002ddescending\u0026start\u003d0\u0026sz\u003d4\"\u007d\u002c\u007b\"displayName\"\u003a\"Data\u0020de\u0020lançamento\"\u002c\"id\"\u003a\"most\u002drecent\"\u002c\"url\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/on\/demandware\u002estore\/Sites\u002dCacauShow\u002dSite\/default\/Search\u002dUpdateGrid\u003fq\u003dsnoopy\u0026srule\u003dmost\u002drecent\u0026start\u003d0\u0026sz\u003d4\"\u007d\u005d\u002c\"ruleId\"\u003a\"price\u002dhigh\u002dto\u002dlow\"\u007d\u002c\"showMoreUrl\"\u003a\"\"\u002c\"permalink\"\u003a\"https\u003a\/\/www\u002ecacaushow\u002ecom\u002ebr\/busca\u003fq\u003dsnoopy\u0026start\u003d0\u0026sz\u003d9\"\u002c\"pageMetaTags\"\u003a\u005b\u007b\u007d\u002c\u007b\u007d\u005d\u002c\"rootCategory\"\u003a\u007b\u007d\u002c\"seoText\"\u003a\"\"\u002c\"categoryBannerAssetID\"\u003anull\u007d'));
+    </script>
+
+</div>
+
+
+    <div class="row d-sm-none footer__lessInfo">
+        Menos Informa&ccedil;&otilde;es
+    </div>
+
+    <div class="row d-sm-none footer__moreInfo">
+        Mais Informa&ccedil;&otilde;es
+    </div>
+
+
+
+    <footer class="footer" id="footercontent">
+        <div class="footer__container">
+
+            <div class="footer__header">
+                <div class="footer__logo">
+                    <span class="icon-big_logo"></span>
+                </div>
+
+            </div>
+
+            <div class="row footer__main">
+                <div class="footer__internalLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="6667ebfe3df8866accdf9df876" -->
+        <ul>
+	<li><a href="para-sua-empresa/institucional.html"><span class="icon icon-mini_logo"></span> <span class="footer__text"> Sobre a <b>Cacau Show</b> </span> </a></li>
+	<li><a href="fazenda/fazenda.html"><span class="icon"> <img alt="" src="on/demandware.static/-/Sites-CacauShow-Library/default/dw6c690283/footer_tree.svg" title="" /> </span> <span class="footer__text"> Nossa <b>Fazenda</b> </span> </a></li>
+	<li><a href="https://www.institutocacaushow.org.br/" target="_blank"><span class="icon"> <img alt="Grupo Cacau Show" src="on/demandware.static/-/Sites-CacauShow-Library/default/dwf8f8c24c/icon-cacau-group.svg" title="" /> </span> <span class="footer__text"> <b>Instituto</b> Cacau Show </span> </a></li>
+	<li><a href="https://www.eureciclo.com.br/" target="_blank"><span class="icon"> <img alt="eu reciclo" src="on/demandware.static/-/Sites-CacauShow-Library/default/dwa345ee6d/icon-eureciclo.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.worldcocoafoundation.org/" target="_blank"><span class="icon"> <img alt="WCF" src="on/demandware.static/-/Sites-CacauShow-Library/default/dw9565d57e/icon-wcf.svg" style="width: 100px" title="" /> </span></a></li>
+	<li><a href="https://www.pactoglobal.org.br/" target="_blank"><span class="icon"> <img alt="Logo Global" src="on/demandware.static/-/Sites-CacauShow-Library/default/dw0a962484/Logo-Global.png" style="width: 100px" title="" /> </span></a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__privacyTerms">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="0efc7e4bc1fdf95585a0a440cf" -->
+        <p>A Cacau Show se compromete em utilizar ovos de galinhas livres de gaiolas em todas as suas opera&ccedil;&otilde;es. Estamos trabalhando para garantir essa transi&ccedil;&atilde;o at&eacute; 2025. As imagens expostas neste site s&atilde;o meramente ilustrativas.</p>
+
+<p>Pre&ccedil;os apresentados na loja virtual podem variar de acordo com a regi&atilde;o. Informa&ccedil;&otilde;es sobre pre&ccedil;os, prazos de validade, estoque e origem podem ser obtidas diretamente nas lojas. &nbsp;Consulte a loja para verificar disponibilidade.</p>
+
+<p>&nbsp;</p>
+
+<p>Pre&ccedil;os, estoques, informa&ccedil;&otilde;es e condi&ccedil;&otilde;es dispon&iacute;veis no site est&atilde;o sujeitos a altera&ccedil;&otilde;es sem aviso pr&eacute;vio. *Pre&ccedil;os e produtos do Choco-Outlet s&atilde;o v&aacute;lidos somente para compras realizadas na loja virtual sujeito a disponibilidade de estoque.</p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="5f99c9d5e9032dfc2cf7d515de" -->
+        <h3>Institucional</h3>
+
+<p><a href="https://revendedor.cacaushow.com.br/revendedor/" target="_blank">Seja um Revendedor</a></p>
+
+<p><a href="franquia.html">Seja um Franqueado</a></p>
+
+<p><a href="para-sua-empresa/para-sua-empresa.html">&Aacute;rea para Empresas</a></p>
+
+<p><a href="https://cacaushow.gupy.io/" target="_blank">Trabalhe Conosco</a></p>
+
+<p><a href="lingua-de-gato.html">Língua de Gato</a></p>
+
+<p><a href="categoria/nossas-marcas.1.html">Nossas Marcas</a></p>
+
+<p><a href="Palito_Premiado.html">Palito Premiado</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+
+                <div class="footer__policyLinks">
+                    
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="58285c918422623e4467907384" -->
+        <h3>Pol&iacute;ticas</h3>
+
+<p><a href="terms.html">Termos de Uso</a></p>
+
+<p><a href="politica-privacidade/privacy-policy.html">Pol&iacute;tica de Privacidade</a></p>
+
+<p><a href="returns.html">Pol&iacute;tica de Trocas</a></p>
+
+<p><a href="faqs.html">FAQ</a>&nbsp;</p>
+
+<p><a href="regulamentos/Regulamentos.html">Regulamentos</a></p>
+
+<p><a href="https://sac.cacaushow.com.br/" target="_blank">SAC</a></p>
+    </div> <!-- End content-asset -->
+
+
+
+
+                </div>
+
+                <div class="col footer__wrapper">
+                    <div class="footer__socialLinks">
+                        
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="9aa03c4dd60ce992affce3c93c" -->
+        <ul>
+        <li><span class="social-text">Siga-nos</span></li>
+	<li><a href="https://www.facebook.com/CacauShow" target="_blank" title="Facebook"><span class="icon-social_fb"></span> </a></li>
+	<li><a href="https://www.instagram.com/cacaushow/" target="_blank" title="Instagram"><span class="icon-social_insta"></span> </a></li>
+	<li><a href="https://www.youtube.com/user/CacauShowBR" target="_blank" title="Youtube"><span class="icon-social_yb"></span> </a></li>
+	<li><a href="https://www.tiktok.com/@cacaushow" target="_blank" title="TikTok"><span class="icon-tiktok"></span> </a></li>
+	<li><a href="https://www.linkedin.com/company/cacau-show/" target="_blank" title="Linkedin"><span class="icon-social_linked"></span> </a></li>
+	<li><a href="https://twitter.com/cacaushow" target="_blank" title="Twitter"><span class="icon-social_tw"></span> </a></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+
+                    </div>
+
+                    <div class="d-none d-sm-block footer__image">
+                        <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                            alt="Cacau Show" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-sm-none footer__image">
+            <div class="row">
+                <div class="col-12">
+                    <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dwf4231bc9/images/bg_footer-feliz.png"
+                        alt="Cacau Show" />
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyrightText">
+            
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="37b2ed0fd3a64c66094b85076e" -->
+        © Copyright 2023. Todos os direitos reservados.  |  Cacau Comércio Eletrônico LTDA 32.143.933/0003-96 | Endereço: Rodovia Anhanguera KM 31,7, 800, Bloco 300 Galpão 20, 21 e 22 - Area Selia, Bairro Empresarial Anhanguera, Cajamar – SP, CEP 07.753-580
+    </div> <!-- End content-asset -->
+
+
+
+
+        </div>
+    </footer>
+
+
+<div class="modal-background-changeAddress"></div>
+<div class="loading__component"></div>
+
+
+
+    
+<script defer type="text/javascript">
+  window.SmartOrderRefillSettings = {};
+  SmartOrderRefillSettings.Resources = {"SOR_CANCEL_SUBSCRIPTION_TITLE":"Assinatura cancelada!","SOR_PAUSE_SUBSCRIPTION_TITLE":"Assinatura pausada!","SOR_REACTIVE_SUBSCRIPTION_TITLE":"Reativar assinatura?","SOR_REACTIVATE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode reativar esta assinatura.","SOR_RESUBSCRIBE_TITLE":"Resubscribe","SOR_RESUBSCRIBE_PRODUCT_AVAILABILITY_WARNING":"Um ou mais itens da sua assinatura não estão disponíveis. Atualmente, você não pode assinar novamente esta assinatura.","SOR_UPDATE_CREDIT_CARD_TITLE":"Atualizar Cartão de Crédito","SOR_GLOBAL_UPDATE_CREDIT_CARD_SAVE":"Confirmar/Atualizar Cartão de Crédito","SOR_ADD_PRODUCT_TITLE_PDP":"Select the subscription to which you would like to add this product:","SOR_ADD_PRODUCT_TITLE":"ADD PRODUCT TO THE SUBSCRIPTION","SOR_ADD_PRODUCT_WARNING":"We could not find an available product to add to this subscription. Please try again later.","SOR_UNEXPECTED_ERROR":"Erro inesperado.","SOR_ERROR_TITLE":"Error","SOR_WARNING_TITLE":"Aviso","SOR_ADDRESS_ERROR":"Unable to change the address.","SOR_PRODUCT_ERROR":"Unable to change the product.","SOR_QUANTITY_ERROR":"Unable to update product quantity.","SOR_CREDITCARD_ERROR":"Unable to update the credit card.","SOR_LOGINFROMCART_ERROR":"Sorry, this does not match our records. Check your spelling and try again.","SOR_GLOBAL_CLOSE":"Fechar","SOR_GLOBAL_CANCEL":"Cancelar","SOR_GLOBAL_SAVE":"Salvar","SOR_GLOBAL_OK":"OK","SOR_GLOBAL_OK_CANCEL":"Ok, estou ciente","SOR_GLOBAL_BACK":"Voltar","SOR_GLOBAL_UPDATE":"Update","SOR_GLOBAL_SUBMIT":"Submit","SOR_CHANGE_ADDRESS_TITLE":"Change Address","SOR_QUANTITY_RESTRAIN_ERROR":"Quantity must be greater than 0","SOR_CHANGEADDRESS_ERROR_NOSHIPPING":"There are no shipping methods available for this address. Please select a valid address.","SOR_CHANGEADDRESS_ERROR_SHIPPING":"An error occured while retrieving available shipping methods. Please try again later.","SOR_ADDFROMPDP_WARNING_SAVE":"Please select a subscription.","SOR_DIALOG_SUBSCRIPTION":"Detalhes / Editar Assinatura","SOR_CONFIRM_REACTIVE_SUBSCRIPTION_TITLE":"Assinatura reativada!","SOR_DIALOG_ORDER":"Remessa do pedido do dia"};
+  SmartOrderRefillSettings.Urls = {"loginFromCartPage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-RequireLogin","manageOrders":"/gerenciar-recompra","updateRefillData":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-UpdateCartProductRefillInformation","getSubscriptionsToAddProductFromPDP":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetSubscriptionsToAddProductFromPDP","updatePDPOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-PDPRefillOptions","cancelOneOrder":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-SkipOrder","cartShow":"/carrinho","getVariantOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetVariantOptions","getIntervalOptions":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetIntervalOptions","getMasterProductID":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetMasterProductID","getLimitedSubscriptionPDPMessage":"/on/demandware.store/Sites-CacauShow-Site/default/SmartOrderRefillController-GetLimitedSubscriptionPDPMessage"};
+  SmartOrderRefillSettings.SitePreferences = {"SOR_ENABLED":true};
+  SmartOrderRefillSettings.hasSORProducts = false;
+</script>
+
+<script defer type="text/javascript" src="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/smartOrderRefill.js"></script>
+
+
+
+
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal-btn" data-dismiss="modal" aria-label="Fechar">
+                    <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dwe7bf1da3/svg/close-modal-icon.svg" alt="" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="content-wrapper">
+                    <img class="icon product-added-success" src="on/demandware.static/Sites-CacauShow-Site/-/default/dw033be606/svg/icon-cart-add.svg" alt="" />
+                    <img class="icon product-added-fail" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwbbb1257d/svg/product-added-fail.svg" alt="" />
+                    <img class="icon product-wishlist-add" src="on/demandware.static/Sites-CacauShow-Site/-/default/dw88cab205/svg/icon-wishlist-added.svg" alt="" />
+                    <img class="icon product-wishlist-remove" src="on/demandware.static/Sites-CacauShow-Site/-/default/dwa21fe753/svg/icon-wishlist-removed.svg" alt="" />
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+
+    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="4bca5d0fb5512994476a3b2659" -->
+        <div id="consent-tracking" class="alert mb-0 fixed-bottom text-center d-none" role="alert">
+     <div class="alert-content d-inline-block pt-1 pb-1"></div>
+     <button type="button" class="affirm btn text-white pr-2 pl-2 mr-1 pb-1 pt-1 float-sm-right float-xs-center" data-dismiss="alert">Aceitar todos os cookies</button>
+</div>
+    </div> <!-- End content-asset -->
+
+
+
+
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/main.js"></script>
+
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/js/search.js"
+        
+        >
+    </script>
+
+
+<![endif]-->
+
+
+<span class="api-true  tracking-consent"
+    data-caOnline="true"
+    data-url="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-GetContent?cid=tracking_hint"
+    data-reject="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=false"
+    data-accept="/on/demandware.store/Sites-CacauShow-Site/default/ConsentTracking-SetConsent?consent=true"
+    data-acceptText="Sim"
+    data-rejectText="N&atilde;o"
+    data-heading="Cookies"
+    data-tokenName="csrf_token"
+    data-token="PmxrBZr1BUu1oFnkBcMWOlnYCW2Yi9WBKoAEkx-FoA76Xsna6Ku4V2QHmLopO1iaynXwPJwsZO_bbPqltgSc4CjfHXAJw2nLms7B0vYFHD6hgxtnkAFGC9UeWh0fNpYUyZ8DW4Y7mYqPMyI0Q80OpCMQfpMiQrpDEHmqsgE39fclYUjmPtw="
+    ></span>
+
+
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-cep">
+    <div class="modal-dialog modal-dialog-scrollable step-01" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-CheckStoreAvailabilityByPostalCode" data-action-select-store="/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" method="post" class="modal-cep" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Bem-vindo à Cacau Show
+                    </h5>
+                    <p class="modal-subTitle">
+                        Para encontrarmos os <strong>melhores preços e o estoque</strong> mais perto de você, por gentileza <strong>informe seu CEP:</strong>
+                    </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex form-row flex-row justify-content-between mb-1">
+                        
+                        <div class="form-group required">
+                            <label class="form-control-label" for="customer-postal-code">
+                                CEP
+                            </label>
+                            <input type="text"
+                                class="form-control js-postal-code-format postal-code-input"
+                                id="customer-postal-code"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                                required
+                                autocomplete="postal-code"
+                                autofocus
+                                name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8" />
+                            <div class="invalid-feedback" id="zipCode-error"></div>
+                        </div>
+
+                        
+                        <div class="form-group required" >
+                            <label class="form-control-label" for="customer-street-number">
+                                Número
+                            </label>
+                            <input type="text"
+                                class="form-control postal-code-input"
+                                id="customer-street-number"
+                                inputmode="numeric"
+                                data-missing-error="Por favor preencher o campo"
+                                data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                                required
+                                name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                                autocomplete="shipping address-number" />
+                            <div class="invalid-feedback" id="userNum-error"></div>
+                        </div>
+                    </div>
+
+                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="btn-postal-code" rel="noopener" role="button" target="_blank" title="N&atilde;o sei meu CEP">
+                        N&atilde;o sei meu CEP
+                    </a>
+
+                    <div class="modal-address">
+                        <p class="zip-code-not-found"></p>
+                    </div>
+
+                    
+                    
+
+
+                    <div class="col-12 js-modal-stores pickupStores border-0 p-0 mb-0 d-none"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="hidden" name="csrf_token" value="xvcsUdvSFob99uCAKWYqGo_ALcCFty_V0WUfttmkID9yq_2DbJrgNPEtncZtqgdK7y2AQm7mW_B-HAUOWej9Q9eyP5BhhnqxstCuRnbE-AneYnj_Rx3K6wgc1qVILGSj389KVKPJjA81xwoTqk9SuBq1FWfrEpOJhKKfJ28ZW3_fWaGuD9k="/>
+                    <button type="submit" class="btn btn-primary">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-address">
+    <div class="modal-dialog" role="document">
+        <form action="https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Stores-UpdateStoreByPostalCode" id="address-form" method="post" class="modal-address" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Informe seu endere&ccedil;o
+                    </h5>
+                    <a href="javascript:void(0);" class="modal-close" data-dismiss="modal" aria-label="Fechar">
+                        <img src="on/demandware.static/Sites-CacauShow-Site/-/default/dw6ddd3d57/images/icon_modal_close.png" alt="Cacau Show" />
+                    </a>
+                </div>
+                <div class="modal-adress-body">
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street">
+                            Endereço
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_street" required aria-required="true" value="" maxLength="2147483647"
+                            autofocus
+                            autocomplete="shipping address1" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-street-number">
+                            Número
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-street-number"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Este campo s&oacute; pode conter n&uacute;meros."
+                            required
+                            name="dwfrm_storeUpdate_streetNumber" required aria-required="true" value="" maxLength="50" pattern="[0-9]+"
+                            autocomplete="shipping address-number" />
+                        <div class="invalid-feedback" id="userNum-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group " >
+                        <label class="form-control-label" for="customer-neighborhood">
+                            Bairro
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-neighborhood"
+                            data-missing-error="Por favor preencher o campo"
+                            
+                            name="dwfrm_storeUpdate_customerAddress_neighborhood" value="" maxLength="2147483647"
+                            autocomplete="shipping address2" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required" >
+                        <label class="form-control-label" for="customer-city">
+                            Cidade
+                        </label>
+                        <input type="text"
+                            class="form-control"
+                            id="customer-city"
+                            data-missing-error="Por favor preencher o campo"
+                            required
+                            name="dwfrm_storeUpdate_customerAddress_city" required aria-required="true" value="" maxLength="2147483647"
+                            autocomplete="shipping city" />
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-postal-code">
+                            CEP
+                        </label>
+                        <input type="text"
+                            class="form-control js-postal-code-format"
+                            id="customer-postal-code"
+                            inputmode="numeric"
+                            data-missing-error="Por favor preencher o campo"
+                            data-pattern-mismatch="Por favor inserir um codigo postal v&aacute;lido"
+                            required
+                            autocomplete="postal-code"
+                            name="dwfrm_storeUpdate_postalCode" required aria-required="true" value="07753580" maxLength="9" minLength="8"
+                            readonly/>
+                        <div class="invalid-feedback" id="zipCode-error"></div>
+                    </div>
+
+                    
+                    <div class="form-group required">
+                        <label class="form-control-label" for="customer-state">
+                            Estado
+                        </label>
+                        <select
+                            class="form-control shippingState custom-select" id="customer-state"
+                            autocomplete="shipping address-level1"
+                            aria-describedby="customer-state"
+                            name="dwfrm_storeUpdate_customerAddress_state" required aria-required="true"
+                            readonly
+                            >
+                            
+                                <option id="AC" value="AC" >Acre</option>
+                            
+                                <option id="AL" value="AL" >Alagoas</option>
+                            
+                                <option id="AP" value="AP" >Amap&aacute;</option>
+                            
+                                <option id="AM" value="AM" >Amazonas</option>
+                            
+                                <option id="BA" value="BA" >Bahia</option>
+                            
+                                <option id="CE" value="CE" >Cear&aacute;</option>
+                            
+                                <option id="DF" value="DF" >Distrito Federal</option>
+                            
+                                <option id="ES" value="ES" >Esp&iacute;rito Santo</option>
+                            
+                                <option id="GO" value="GO" >Goi&aacute;s</option>
+                            
+                                <option id="MA" value="MA" >Maranh&atilde;o</option>
+                            
+                                <option id="MT" value="MT" >Mato Grosso</option>
+                            
+                                <option id="MS" value="MS" >Mato Grosso do Sul</option>
+                            
+                                <option id="MG" value="MG" >Minas Gerais</option>
+                            
+                                <option id="PA" value="PA" >Par&aacute;</option>
+                            
+                                <option id="PB" value="PB" >Para&iacute;ba</option>
+                            
+                                <option id="PR" value="PR" >Paran&aacute;</option>
+                            
+                                <option id="PE" value="PE" >Pernambuco</option>
+                            
+                                <option id="PI" value="PI" >Piau&iacute;</option>
+                            
+                                <option id="RJ" value="RJ" >Rio de Janeiro</option>
+                            
+                                <option id="RN" value="RN" >Rio Grande do Norte</option>
+                            
+                                <option id="RS" value="RS" >Rio Grande do Sul</option>
+                            
+                                <option id="RO" value="RO" >Rond&ocirc;nia</option>
+                            
+                                <option id="RR" value="RR" >Roraima</option>
+                            
+                                <option id="SC" value="SC" >Santa Catarina</option>
+                            
+                                <option id="SP" value="SP" >S&atilde;o Paulo</option>
+                            
+                                <option id="SE" value="SE" >Sergipe</option>
+                            
+                                <option id="TO" value="TO" >Tocantins</option>
+                            
+                        </select>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <p class="modal__error">Nenhuma loja encontrada para esse endere&ccedil;o.</p>
+                    <input type="hidden" name="csrf_token" value="xvcsUdvSFob99uCAKWYqGo_ALcCFty_V0WUfttmkID9yq_2DbJrgNPEtncZtqgdK7y2AQm7mW_B-HAUOWej9Q9eyP5BhhnqxstCuRnbE-AneYnj_Rx3K6wgc1qVILGSj389KVKPJjA81xwoTqk9SuBq1FWfrEpOJhKKfJ28ZW3_fWaGuD9k="/>
+                    <button type="submit" class="btn btn-primary">
+                        Confirmar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="removeProductModal" tabindex="-1" role="dialog" aria-labelledby="removeProductLineItemModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header delete-confirmation-header">
+                <h2 class="modal-title" id="removeProductLineItemModal">Remover produto ?</h2>
+            </div>
+            <div class="modal-body delete-confirmation-body">
+                Deseja remover o produto do carrinho ?
+                <p class="product-to-remove"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary cart-delete-confirmation-btn"
+                    data-dismiss="modal"
+                >
+                    Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <input type="hidden" id="googleRecaptchaSiteKey" value="6LelHCgjAAAAAHSpCbAC4G4MzSgr-vyKDPL_x1bA"/>
+    <input type="hidden" id="googleRecaptchaAction"  value="submit"/>
+
+
+
+<input type="hidden" name="pendingTerms" value="null" />
+
+
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="on/demandware.static/Sites-CacauShow-Site/-/default/v1741357423342/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
+
